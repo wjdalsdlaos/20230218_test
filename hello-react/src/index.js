@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Inputs from "./com/20230129/Inputs";
+import TodoList from "./com/20230129/TodoList";
 import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Hello from "./com/20230129/Hello";
-import Counter from "./com/20230129/Counter";
+//import Hello from "./com/20230129/Hello";
+//import Counter from "./com/20230129/Counter";
+//import InputText from "./com/20230129/InputText";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Hello title="첫번째 컴포넌트" color={"green"} backgroundColor={"#eee"} />
-    <Hello title="두번째 컴포넌트" color={"red"} backgroundColor={"#FFFF"} />
-    <Hello />
-    <Counter></Counter>
+    <TodoList></TodoList>
+    <Inputs></Inputs>
   </React.StrictMode>
 );
 

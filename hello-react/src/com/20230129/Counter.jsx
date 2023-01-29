@@ -22,8 +22,8 @@ function Counter() {
     <div>
       <p>{count}</p>
       {/* 이벤트바인딩 함수를 값으로 전달해야한다(함수 호출 x)*/}
-      <button onClick={handleCount(1)}>+1</button>
-      <button onClick={handleCount(-1)}>-1</button>
+      <button onClick={() => handleCount(1)}>+1</button>
+      <button onClick={() => handleCount(-1)}>-1</button>
     </div>
   );
 }
