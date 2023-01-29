@@ -4,6 +4,7 @@ import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Hello from "./com/20230129/Hello";
+import Counter from "./com/20230129/Counter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,9 +12,7 @@ root.render(
     <Hello title="첫번째 컴포넌트" color={"green"} backgroundColor={"#eee"} />
     <Hello title="두번째 컴포넌트" color={"red"} backgroundColor={"#FFFF"} />
     <Hello />
-    <Hello>
-      <p>자식 요소입니다.</p>
-    </Hello>
+    <Counter></Counter>
   </React.StrictMode>
 );
 
