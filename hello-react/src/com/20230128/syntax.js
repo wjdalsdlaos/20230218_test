@@ -4,13 +4,13 @@
         2) hoisting 호이스팅이 일어난다.(선언하기 전에 변수 사용 시 undefined)
         3) 함수 레벨 스코프(유효범위)만 지원한다. => 블록 레벨 스코프는 지원하지 않는다.
 */
-console.log(num); //undefined(호이스팅)
+//console.log(num); //undefined(호이스팅)
 
-var num = 20;
+//var num = 20;
 
 //console.log(lnum); //호이스팅은 발생하지만 TDZ때문에 오류 발생(컴파일 불가)
 
-let lnum = 20;
+//let lnum = 20;
 
 //console.log("lnum : " + lnum);
 
@@ -19,11 +19,11 @@ let lnum = 20;
 
 //console.log("num : " + num);
 
-for (var num = 0; num < 10; num++) {}
+//for (var num = 0; num < 10; num++) {}
 
 //console.log("num 2 : " + num);
 
-for (let lnum = 0; lnum < 10; lnum++) {}
+//for (let lnum = 0; lnum < 10; lnum++) {}
 
 //console.log("lnum 2 : " + lnum);
 
@@ -34,8 +34,8 @@ for (let lnum = 0; lnum < 10; lnum++) {}
         - 함수 호이스팅이 일어나지 않는다.(변수 호이스팅으로 오류 남)
 */
 // sum(); 함수 호이스팅이 일어나지 않기 때문에 오류 발생
-const sum = (a, b) => a + b; //코드 블록과 return을 생략하면 표현식의 결과가 return 된다.
-const getObj = (name, age) => ({ name: name, age: age }); // return 시 {} 는 코드 블록으로도 인지되기 때문에 객체로 인지시키기 위해 ()로 감싸준다.
+//const sum = (a, b) => a + b; //코드 블록과 return을 생략하면 표현식의 결과가 return 된다.
+//const getObj = (name, age) => ({ name: name, age: age }); // return 시 {} 는 코드 블록으로도 인지되기 때문에 객체로 인지시키기 위해 ()로 감싸준다.
 
 /*
     매개변수 rest
@@ -63,7 +63,7 @@ let arr = [1, 2, 3, 4, 5];
 console.log(getTotal(...arr)); //getTotall(1,2,3,4,5)
 
 let user = { name: "seok", age: 40 };
-let copy02 = { ...user };
+//let copy02 = { ...user };
 
 //user 의 프로퍼티 값들을 같은 이름의 변수로 담기
 
@@ -79,7 +79,7 @@ let copy02 = { ...user };
 //let age = user.age;
 //let name = user.name;
 
-let { age, name } = user;
+//let { age, name } = user;
 let fruits = ["apple", "orange", "grape"];
 let [aa, bb, cc] = fruits;
 console.log("aabbcc : " + aa + " | " + bb + " | " + cc);
@@ -177,9 +177,9 @@ console.log(oddrottos);
 */
 
 //2배로 불리기
-let doubleNumbers = rottoNum.map(function (num) {
-  return num * 2;
-});
+//let doubleNumbers = rottoNum.map(function (num) {
+//  return num * 2;
+//});
 
 //console.log(doubleNumbers);
 
