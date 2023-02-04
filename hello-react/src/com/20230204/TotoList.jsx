@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import React from "react";
 
 function countUndoneTodo(todos) {
   return todos.filter((todo) => !todo.done).length;
@@ -39,4 +40,5 @@ function TodoItem({ todo, dispatch }) {
     </li>
   );
 }
-export default TotoList;
+//React.memo : 컴포넌트가 받는 props가 변경되었을 때만 렌더링이 다시 일어난다.
+export default React.memo(TotoList);

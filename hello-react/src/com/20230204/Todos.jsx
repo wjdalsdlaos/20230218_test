@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { createContext, useReducer } from "react";
 import Counter from "./Counter";
 import TodoCreate from "./TodoCreate";
 import TodoList from "./TotoList";
@@ -27,6 +27,8 @@ const initialState = [
   { id: 3, text: "useCallback 배우기", done: false },
 ];
 
+const TodoStateContext = createContext();
+
 function Todos() {
   // useReducer(리듀서함수, 초기값) => 상태값, 디스패치 함수 반환
   const [todos, dispatch] = useReducer(todos_reducer, initialState);
@@ -41,6 +43,7 @@ function Todos() {
       <TodoCreate dispatch={dispatch} />
       <TodoList todos={todos} dispatch={dispatch} />
       <Counter />
+      <br />
     </div>
   );
 }
