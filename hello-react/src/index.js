@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Inputs from "./com/20230129/Inputs";
-import TodoList from "./com/20230129/TodoList";
+import Effect from "./com/20230204/Effect";
+//import Inputs from "./com/20230129/Inputs";
+//import TodoList from "./com/20230129/TodoList";
 import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -12,8 +13,13 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TodoList></TodoList>
-    <Inputs></Inputs>
+    {
+      //<TodoList></TodoList>
+    }
+    {
+      //<Inputs></Inputs>
+    }
+    <Effect></Effect>
   </React.StrictMode>
 );
 

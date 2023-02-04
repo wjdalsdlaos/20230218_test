@@ -34,9 +34,6 @@ function TodoList() {
   };
 
   const handleToggle = (id) => {
-    {
-      console.log("확인");
-    }
     setTodos(
       todos.map((todo) =>
         todo.id === id ? { ...todo, done: !todo.done } : todo
