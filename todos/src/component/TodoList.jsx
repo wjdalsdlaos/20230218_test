@@ -1,5 +1,13 @@
+import TodoItem from "./TotoItem";
+
 function TodoList() {
-  return <ul></ul>;
+  return (
+    <ul>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+    </ul>
+  );
 }
 
 export default TodoList;

@@ -18,10 +18,13 @@ const slideUp = keyframes`
 
 const StyledButton = styled.div`
   width: 200px;
+  padding: 5px 0;
   border-radius: 40%;
-  background-color: ${({ bgColor }) => bgColor};
+  background-color: ${({ bgColor, theme }) => bgColor || theme.colors.main};
   color: #fff;
   text-align: center;
+  outline: none;
+  border: none;
 
   animation: ${slideUp} 1s;
 
