@@ -38,8 +38,8 @@ const Item = styled.div`
     flex-shrink: 0; //공간이 부족할 때 줄이는 비용
   }
   &:nth-child(2) {
-    flex-grow: 2;
-    flex: 1 1 0;
+    //flex-grow: 2;
+    flex: 1 1 0; //단축 속성 grow,shirink, basis 순
   }
 `;
 export default Flex;
