@@ -1,12 +1,18 @@
 import { useMemo } from "react";
 import React from "react";
+//import { CountContext } from "../..";
+import { useTodoDispatch, useTodoState } from "../../custHook/todos";
 
 function countUndoneTodo(todos) {
   return todos.filter((todo) => !todo.done).length;
 }
 
-function TotoList({ todos, dispatch }) {
+function TotoList() {
   //의존성 배열이 있는 값이 변했을 대만 다시 연산(렌더링) 한다. usememo
+
+  const todos = useTodoState();
+  //const dispatch = useContext(TodoDispastchContext);
+
   const underCount = useMemo(() => {
     return countUndoneTodo(todos);
   }, [todos]);
@@ -14,7 +20,7 @@ function TotoList({ todos, dispatch }) {
     <div>
       <ul>
         {todos.map((todo) => (
-          <TodoItem todo={todo} dispatch={dispatch} />
+          <TodoItem todo={todo} />
         ))}
       </ul>
       <h2>하지 못 한 업무 개수 : {underCount}</h2>
@@ -22,7 +28,9 @@ function TotoList({ todos, dispatch }) {
   );
 }
 
-function TodoItem({ todo, dispatch }) {
+function TodoItem({ todo /*, dispatch*/ }) {
+  const dispatch = useTodoDispatch();
+  //const ccount = useContext(CountContext);
   const handleRemove = (id) => {
     if (window.confirm("삭제하시겠습니까?"))
       dispatch({ type: "remove", id: id });
