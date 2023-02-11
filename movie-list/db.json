@@ -1,19 +1,29 @@
 {
   "todos": [
     {
-      "id": 2,
-      "text": "json-server로 api 연동 연습",
-      "done": false
-    },
-    {
-      "text": "dsfsdf",
-      "done": false,
-      "id": 3
-    },
-    {
       "text": "와 신기하다!",
-      "done": false,
+      "done": true,
       "id": 5
+    },
+    {
+      "text": "유호오오오오오옷",
+      "done": false,
+      "id": 7
+    },
+    {
+      "text": "호오온로ㅓㅇ니ㅏ런이ㅏ렁ㄴ",
+      "done": false,
+      "id": 8
+    },
+    {
+      "text": "아이고좋아라ㄴ",
+      "done": false,
+      "id": 9
+    },
+    {
+      "text": "ㄹㅇㅎㅇㅀ",
+      "done": false,
+      "id": 10
     }
   ],
   "users": [
@@ -24,6 +34,44 @@
     {
       "id": 2,
       "name": "Leale"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "제목입니다.",
+      "body": "인센티브 1 읏읏",
+      "author": "관리자"
+    },
+    {
+      "id": 2,
+      "title": "필살기 쓰고 싶다",
+      "body": "수정펀치잇",
+      "author": "샤아 아즈나블"
+    },
+    {
+      "id": 3,
+      "title": "퇴사만이 답이다.",
+      "body": "던지자 사표",
+      "author": "수퍼뚱땡이"
+    },
+    {
+      "title": "dfgdfg",
+      "body": "",
+      "author": "관리자",
+      "id": 4
+    },
+    {
+      "title": "5번째",
+      "body": "5번째 글 등록",
+      "author": "관리자",
+      "id": 5
+    },
+    {
+      "title": "dfgdfg",
+      "body": "fghfgh",
+      "author": "관리자",
+      "id": 6
     }
   ]
 }
