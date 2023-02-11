@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "text": "json-server로 api 연동 연습",
+      "done": false
+    },
+    {
+      "text": "dsfsdf",
+      "done": false,
+      "id": 3
+    },
+    {
+      "text": "와 신기하다!",
+      "done": false,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Lucian"
+    },
+    {
+      "id": 2,
+      "name": "Leale"
+    }
+  ]
+}
