@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "done": false,
+      "state": "로그아웃"
+    },
+    {
+      "id": 3,
+      "name": "Customer",
+      "done": true,
+      "state": "업무중"
+    },
+    {
+      "id": 4,
+      "name": "Test_User",
+      "done": false,
+      "state": "로그아웃"
+    },
+    {
+      "name": "sdfsdf",
+      "id": 5,
+      "done": false
+    },
+    {
+      "name": "sdfsdfdfgd",
+      "id": 6,
+      "done": false
+    },
+    {
+      "name": "fdgdfg",
+      "id": 7
+    },
+    {
+      "name": "ㄹ홀호",
+      "id": 8,
+      "done": false,
+      "state": "자리비움"
+    },
+    {
+      "name": "테스트유저",
+      "state": "업무중",
+      "id": 9,
+      "done": false
+    },
+    {
+      "name": "테스트유저퍄퍄",
+      "state": "자리비움",
+      "id": 10
+    }
+  ],
+  "states": []
+}

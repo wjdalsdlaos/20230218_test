@@ -1,0 +1,14 @@
+header {
+  width: 200px;
+  height: 150px;
+
+  .gnbList {
+    display: flex;
+    li {
+      color: red;
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}
