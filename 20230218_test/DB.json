@@ -7,36 +7,22 @@
       "state": "로그아웃"
     },
     {
-      "id": 3,
-      "name": "Customer",
-      "done": true,
-      "state": "업무중"
-    },
-    {
       "id": 4,
       "name": "Test_User",
       "done": false,
-      "state": "로그아웃"
+      "state": "로그인"
     },
     {
       "name": "sdfsdf",
       "id": 5,
-      "done": false
-    },
-    {
-      "name": "sdfsdfdfgd",
-      "id": 6,
-      "done": false
+      "done": false,
+      "state": "로그인"
     },
     {
       "name": "fdgdfg",
-      "id": 7
-    },
-    {
-      "name": "ㄹ홀호",
-      "id": 8,
+      "id": 7,
       "done": false,
-      "state": "자리비움"
+      "state": "업무중"
     },
     {
       "name": "테스트유저",
@@ -48,6 +34,31 @@
       "name": "테스트유저퍄퍄",
       "state": "자리비움",
       "id": 10
+    },
+    {
+      "name": "바쁜 사람",
+      "state": "업무중",
+      "id": 11
+    },
+    {
+      "name": "다시 다시 테스트",
+      "state": "로그인",
+      "id": 12
+    },
+    {
+      "name": "다시 다시 테스트",
+      "state": "업무중",
+      "id": 13
+    },
+    {
+      "name": "다시 다시 테스트",
+      "state": "로그아웃",
+      "id": 14
+    },
+    {
+      "name": "다시 다시 테스트",
+      "state": "로그인",
+      "id": 15
     }
   ],
   "states": []

@@ -3,7 +3,7 @@ import axios from "axios";
 
 function User() {
   const [name, setName] = useState("");
-  const [state, setState] = useState("로그아웃");
+  const [state, setState] = useState("로그인");
   const [users, setUsers] = useState({
     isLoading: true,
     data: null,
@@ -76,7 +76,10 @@ function User() {
     <div>
       <div>
         <input type="text" onChange={(e) => setName(e.target.value)}></input>
-        <select onChange={(e) => setState(e.target.value)}>
+        <select
+          onChange={(e) => setState(e.target.value)}
+          defaultValue="로그인"
+        >
           <option key="로그인" value="로그인">
             로그인
           </option>
@@ -122,7 +125,12 @@ function User() {
                 자리비움
               </option>
             </select>
-            <br />
+
+            <img
+              src={"img/" + user.state + ".png"}
+              alt="userstate"
+              width="40"
+            />
           </li>
         ))}
       </ul>
