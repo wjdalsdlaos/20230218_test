@@ -13,7 +13,7 @@ function ContentList({ title, initialState }) {
       filters.map((filter) =>
         //클릭한 대상은 무조건 active=true, 나머지는 false
         filter.id === id
-          ? { ...filter, active: true, url: filter.url }
+          ? { ...filter, active: true }
           : { ...filter, active: false }
       )
     );

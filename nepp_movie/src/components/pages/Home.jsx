@@ -6,7 +6,7 @@ const filters = {
     { id: 2, text: "tv", active: false, url: "/trending/tv/week" },
   ],
   popular: [
-    { id: 1, text: "tv", acvie: true, url: "/tv/popular" },
+    { id: 1, text: "tv", active: true, url: "/tv/popular" },
     { id: 2, text: "movie", active: false, url: "/movie/popular" },
   ],
 };
